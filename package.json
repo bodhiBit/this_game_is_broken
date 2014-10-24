@@ -1,0 +1,16 @@
+{
+  "name": "this_game_is_broken",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-browserify": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-harp": "*",
+    "coffeeify": "*"
+  }
+}
