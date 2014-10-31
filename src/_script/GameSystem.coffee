@@ -28,11 +28,13 @@ class GameSystem
       set: (direction) -> @changeDirection direction
     buttons:
       get: -> @_buttons
+    g:
+      get: -> @_g
   
   constructor: (@_TVcanvas, @width=320, @height=200, @TVenabled=true) ->
     @_TVg = @_TVcanvas.getContext "2d"
-    @_borderWidth = @width / 8
-    @_borderHeight = @height / 16
+    @_borderWidth = @width / 64
+    @_borderHeight = @height / 64
     @_scale = 1
     @_sweep = 0
     @_sprites = {}
@@ -119,7 +121,8 @@ class GameSystem
     g.fillRect -@_borderWidth, -@_borderHeight, @TVwidth, @TVheight
     g.drawImage @_canvas, 0, 0, @width, @height
     if @TVenabled
-      g.drawImage @_TVscanlineImg, -@_borderWidth, -@_borderHeight, @TVwidth, @TVheight
+      g.drawImage @_TVscanlineImg, -@_borderWidth, -@_borderHeight,
+                                                            @TVwidth, @TVheight
       g.fillStyle = "rgba(0, 0, 0, .03125)"
       g.fillRect -@_borderWidth, @_sweep, @TVwidth, @TVheight/2
       @_sweep++
