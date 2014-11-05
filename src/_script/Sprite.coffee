@@ -49,7 +49,7 @@ class Sprite
       for y in [top...@height+top]
         for x in [left...@width+left]
           if frames is @_mirrorFrames
-            g.fillStyle = @_pget (left+@width) - (x-left), y
+            g.fillStyle = @_pget (left+@width-1) - (x-left), y
           else
             g.fillStyle = @_pget x, y
           g.fillRect x-left, y-top, 1, 1
@@ -57,6 +57,8 @@ class Sprite
     frames[i]
   
   _pget: (x, y) ->
+    x = x % @srcimg.width
+    y = y % @srcimg.height
     i = (y * @srcimg.width + x) * 4
     color = "rgba("
     color += @imgdata.data[i+0] + ","

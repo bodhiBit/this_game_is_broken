@@ -35,6 +35,7 @@ class GameSystem
     @_TVg = @_TVcanvas.getContext "2d"
     @_borderWidth = @width / 64
     @_borderHeight = @height / 64
+    @_borderWidth = @_borderHeight = 0
     @_scale = 1
     @_sweep = 0
     @_sprites = {}
@@ -76,11 +77,11 @@ class GameSystem
   line: (x1, y1, x2, y2, color) ->
     # TODO implementation
   
-  rect: (x1, y1, x2, y2, color) ->
-    left = Math.round Math.min x1, x2
-    top = Math.round Math.min y1, y2
-    width = 1 + Math.round Math.abs x2 - x1
-    height = 1 + Math.round Math.abs y2 - y1
+  rect: (left, top, width, height, color) ->
+    left = Math.round left
+    top = Math.round top
+    width = Math.round width
+    height = Math.round height
     g = @_g
     if color?
       g.fillStyle = color
