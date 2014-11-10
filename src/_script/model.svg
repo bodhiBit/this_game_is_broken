@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="65cm" height="27cm" viewBox="61 50 1300 532" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="62" y="51" width="410.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="62" y="51" width="410.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="267.2" y="71">GameSystem</text>
+    <rect style="fill: #ffffff" x="62" y="79" width="410.4" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="62" y="79" width="410.4" height="8"/>
+    <rect style="fill: #ffffff" x="62" y="87" width="410.4" height="228"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="62" y="87" width="410.4" height="228"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="100.2">+goFullScreen()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="116.2">+storeSprite(name:string,url:string,width:number=32,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="132.2">             height:number=32)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="148.2">+clearAllSprites()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="164.2">+drawSprite(name:string,left:number,top:number,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="180.2">            column:number=0,row:number=0)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="196.2">+line(x1:number,y1:number,x2:number,y2:number,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="212.2">      color:string)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="228.2">+bar(x1:number,y1:number,x2:number,y2:number,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="244.2">     color:string)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="260.2">+setDirectionMode(directionMode:DirectionMode)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="276.2">+changeDirection(direction:Direction)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="292.2">+pressButton(index:number)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="65" y="308.2">+depressButton(index:number)</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="665" y="58" width="410.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="665" y="58" width="410.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="870.2" y="78">Game</text>
+    <rect style="fill: #ffffff" x="665" y="86" width="410.4" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="665" y="86" width="410.4" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="668" y="99.2">+panX: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="668" y="115.2">+panY: Number</text>
+    <rect style="fill: #ffffff" x="665" y="122" width="410.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="665" y="122" width="410.4" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="668" y="135.2">+render(timestamp:DOMHighResTimeStamp)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="668" y="151.2">+gamepad(direction:Direction,buttons:Array&lt;boolean&gt;)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="668" y="167.2">+addObject(object:GameObject)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="668" y="183.2">+removeObject(object:GameObject)</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="473.392,183 578.602,183 578.602,124 664.013,124 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="580.602" y="149.5"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="477.392" y="179"> gameSystem</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="477.392" y="195">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="660.013" y="120"> game</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="660.013" y="136">1</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="220" y="377" width="94.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="377" width="94.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="267.35" y="397">Direction</text>
+    <rect style="fill: #ffffff" x="220" y="405" width="94.7" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="405" width="94.7" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="418.2">+UP</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="434.2">+DOWN</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="450.2">+LEFT</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="466.2">+RIGHT</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="482.2">+UP_LEFT</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="498.2">+UP_RIGHT</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="514.2">+DOWN_LEFT</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="223" y="530.2">+DOWN_RIGHT</text>
+    <rect style="fill: #ffffff" x="220" y="537" width="94.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="220" y="537" width="94.7" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="65" y="347" width="127.25" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="65" y="347" width="127.25" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="128.625" y="367">DirectionMode</text>
+    <rect style="fill: #ffffff" x="65" y="375" width="127.25" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="65" y="375" width="127.25" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="68" y="388.2">+UP_DOWN</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="68" y="404.2">+LEFT_RIGHT</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="68" y="420.2">+FOUR_WAY</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="68" y="436.2">+EIGHT_WAY</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="68" y="452.2">+DIAGONAL</text>
+    <rect style="fill: #ffffff" x="65" y="459" width="127.25" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="65" y="459" width="127.25" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1056" y="167" width="302.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1056" y="167" width="302.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1207.3" y="187">GameObject</text>
+    <rect style="fill: #ffffff" x="1056" y="195" width="302.6" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1056" y="195" width="302.6" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="208.2">+x: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="224.2">+y: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="240.2">+width: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="256.2">+height: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="272.2">+top: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="288.2">+left: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="304.2">+bottom: Number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="320.2">+right: Number</text>
+    <rect style="fill: #ffffff" x="1056" y="327" width="302.6" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1056" y="327" width="302.6" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="340.2">+tick()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059" y="356.2">+render(timestamp:DOMHighResTimeStamp)</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1101.58,124 1207.3,124 1207.3,165.994 "/>
+    <polygon style="fill: #ffffff" points="1076.41,124 1090.41,119.2 1104.41,124 1090.41,128.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1076.41,124 1090.41,119.2 1104.41,124 1090.41,128.8 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1141.85" y="120"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1108.41" y="120"> game</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1108.41" y="136">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1211.3" y="145.994"> objects</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1211.3" y="161.994">0..*</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="815.602" y="262" width="109.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="815.602" y="262" width="109.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="870.177" y="282">JungleGame</text>
+    <rect style="fill: #ffffff" x="815.602" y="290" width="109.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="815.602" y="290" width="109.15" height="8"/>
+    <rect style="fill: #ffffff" x="815.602" y="298" width="109.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="815.602" y="298" width="109.15" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="870.2,209.244 870.2,234.001 870.177,234.001 870.177,260.994 "/>
+    <polygon style="fill: #ffffff" points="878.2,209.244 870.2,193.244 862.2,209.244 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="878.2,209.244 870.2,193.244 862.2,209.244 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1056.6" y="461" width="302.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1056.6" y="461" width="302.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1207.9" y="481">Larry</text>
+    <rect style="fill: #ffffff" x="1056.6" y="489" width="302.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1056.6" y="489" width="302.6" height="8"/>
+    <rect style="fill: #ffffff" x="1056.6" y="497" width="302.6" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1056.6" y="497" width="302.6" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059.6" y="510.2">+tick()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059.6" y="526.2">+render(timestamp:DOMHighResTimeStamp)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1059.6" y="542.2">+collideWith(object:GameObject)</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1207.3,382.242 1207.3,420 1207.9,420 1207.9,459.995 "/>
+    <polygon style="fill: #ffffff" points="1215.3,382.242 1207.3,366.242 1199.3,382.242 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1215.3,382.242 1207.3,366.242 1199.3,382.242 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="950.911,284 981.602,284 981.602,505 1055.6,505 "/>
+    <polygon style="fill: #ffffff" points="925.74,284 939.74,279.2 953.74,284 939.74,288.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="925.74,284 939.74,279.2 953.74,284 939.74,288.8 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="957.74" y="280"> game</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="957.74" y="296">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="1051.6" y="501"> hero, objects</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="1051.6" y="517">1</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="695.604" y="524" width="302.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="695.604" y="524" width="302.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="846.904" y="544">Platform</text>
+    <rect style="fill: #ffffff" x="695.604" y="552" width="302.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="695.604" y="552" width="302.6" height="8"/>
+    <rect style="fill: #ffffff" x="695.604" y="560" width="302.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="695.604" y="560" width="302.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="698.604" y="573.2">+render(timestamp:DOMHighResTimeStamp)</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1036.75,265 1019.1,265 1019.1,552 999.213,552 "/>
+    <polygon style="fill: #ffffff" points="1036.75,273 1052.75,265 1036.75,257 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1036.75,273 1052.75,265 1036.75,257 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="870.177,332.177 870.177,421.999 846.904,421.999 846.904,522.993 "/>
+    <polygon style="fill: #ffffff" points="870.177,307.006 874.977,321.006 870.177,335.006 865.377,321.006 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="870.177,307.006 874.977,321.006 870.177,335.006 865.377,321.006 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.177" y="319.006"> game</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="881.177" y="335.006">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="850.904" y="502.993"> objects</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="850.904" y="518.993">0..*</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="384.39" y="404" width="425.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="384.39" y="404" width="425.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="597.29" y="424">Sprite</text>
+    <rect style="fill: #ffffff" x="384.39" y="432" width="425.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="384.39" y="432" width="425.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="387.39" y="445.2">+scale: Number</text>
+    <rect style="fill: #ffffff" x="384.39" y="452" width="425.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="384.39" y="452" width="425.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="387.39" y="465.2">+getFrame(column:Number,row:Number): HTMLCanvasElement</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="267.2,341.18 267.2,366.5 597.29,366.5 597.29,402.991 "/>
+    <polygon style="fill: #ffffff" points="267.2,316.008 272,330.008 267.2,344.008 262.4,330.008 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="267.2,316.008 272,330.008 267.2,344.008 262.4,330.008 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="278.2" y="328.008">1</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="601.29" y="382.991"> _sprites</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="601.29" y="398.991">0..*</text>
+  </g>
+</svg>
