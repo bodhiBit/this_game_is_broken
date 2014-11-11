@@ -11,10 +11,12 @@ class GameSystem
       get: -> @_game
       set: (game) ->
         if @_game isnt game
-          if @_game?
-            @_game.gameSystem = null
+          oldGame = @_game
           @_game = game
-          @_game.gameSystem = @ if @_game?
+          if oldGame?
+            oldGame.gameSystem = null
+          if @_game?
+            @_game.gameSystem = @
         @_game
     TVwidth:
       get: -> @width+2*@_borderWidth

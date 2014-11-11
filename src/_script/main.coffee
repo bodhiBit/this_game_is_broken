@@ -1,6 +1,6 @@
 "use strict"
 GameSystem = require "./GameSystem.coffee"
-JungleGame = require "./jungle_trap/JungleGame.coffee"
+PingGame = require "./ping/PingGame.coffee"
 
 ###
  main.coffee
@@ -19,5 +19,5 @@ window.requestAnimationFrame ?= window.webkitRequestAnimationFrame
 TVcanvas = document.getElementsByTagName("canvas")[0]
 
 gameSystem = new GameSystem TVcanvas, 320, 200, true
-game = new JungleGame gameSystem
+game = new PingGame gameSystem
 gameSystem.game = game

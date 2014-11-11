@@ -7,9 +7,10 @@ class Game
       get: -> @_gameSystem
       set: (gameSystem) ->
         if @_gameSystem isnt gameSystem
-          if @_gameSystem?
-            @_gameSystem.game = null
+          oldGameSystem = @_gameSystem
           @_gameSystem = gameSystem
+          if oldGameSystem?
+            oldGameSystem.game = null
           if @_gameSystem?
             @_gameSystem.game = @
         return @_gameSystem
@@ -48,8 +49,8 @@ class Game
     while i < @objects.length and @objects[i].left < @panX + @gameSystem.width
       object = @objects[i]
       object.render timestamp
-      @gameSystem.g.fillStyle = "white"
-      @gameSystem.g.fillText "##{i}", object.x, object.y
+      # @gameSystem.g.fillStyle = "white"
+      # @gameSystem.g.fillText "##{i}", object.x, object.y
       if i > 0 and object.x < @objects[i-1].x
         @objects[i] = @objects[i-1]
         @objects[i-1] = object

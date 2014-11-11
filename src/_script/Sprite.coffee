@@ -42,6 +42,8 @@ class Sprite
       canvas = document.createElement "canvas"
       canvas.setAttribute "width", @width*@scale
       canvas.setAttribute "height", @height*@scale
+      if not @imgdata?
+        return canvas
       g = canvas.getContext "2d"
       g.scale @scale, @scale
       left = column*@width
