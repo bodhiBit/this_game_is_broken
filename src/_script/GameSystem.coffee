@@ -256,5 +256,6 @@ class GameSystem
         @depressButton 1
       else
         console.log "Unassigned keyCode: #{e.keyCode}-"
+        alert "Use Z, X and arrow keys\nto control the game"
 
 module.exports = GameSystem
