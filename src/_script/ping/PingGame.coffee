@@ -23,6 +23,10 @@ class PingGame extends Game
     @gameSystem.drawSprite "ping_digits", 177, 7, @rightScore, 0
     super
     if @leftScore is 10 or @rightScore is 10
-      new JungleGame @gameSystem
+      gs = @gameSystem
+      gs.game = null
+      setTimeout ->
+        new JungleGame gs
+      , 1000
 
 module.exports = PingGame

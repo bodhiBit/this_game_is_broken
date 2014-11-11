@@ -19,6 +19,8 @@ class JungleGame extends Game
     @frameSkip = (@frameSkip + 1) % 4
     if @frameSkip isnt 0
       return
+    if @lastPlatform.left < @panX + @gameSystem.width
+      do @addPlatform
     @gameSystem.drawSprite "jungle_bg", 0, 0
     super
   

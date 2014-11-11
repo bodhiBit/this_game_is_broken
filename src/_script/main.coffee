@@ -19,5 +19,6 @@ window.requestAnimationFrame ?= window.webkitRequestAnimationFrame
 TVcanvas = document.getElementsByTagName("canvas")[0]
 
 gameSystem = new GameSystem TVcanvas, 320, 200, true
-game = new PingGame gameSystem
-gameSystem.game = game
+setTimeout ->
+  new PingGame gameSystem
+, 5000

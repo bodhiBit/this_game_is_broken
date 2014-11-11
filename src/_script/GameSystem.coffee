@@ -58,6 +58,7 @@ class GameSystem
     @_TVcanvas.addEventListener "touchend", @fullScreen
     document.addEventListener "keydown", @_onKeyDown.bind @
     document.addEventListener "keyup", @_onKeyUp.bind @
+    @storeSprite "tv_static", "gfx/static.gif", 640, 400
   
   fullScreen: ->
     do document.body.webkitRequestFullscreen
@@ -115,7 +116,11 @@ class GameSystem
       @game.gamepad @_direction, @_buttons if @game?
   
   _render: (timestamp) ->
-    @game.render timestamp if @game?
+    if @game?
+      @game.render timestamp
+    else
+      @drawSprite "tv_static", (-@width * do Math.random),
+                                                    (-@height * do Math.random)
     
     g = @_TVg
     
@@ -256,6 +261,8 @@ class GameSystem
         @depressButton 1
       else
         console.log "Unassigned keyCode: #{e.keyCode}-"
-        alert "Use Z, X and arrow keys\nto control the game"
+        if not @instructed
+          alert "Use Z, X and arrow keys\nto control the game"
+          @instructed = true
 
 module.exports = GameSystem
