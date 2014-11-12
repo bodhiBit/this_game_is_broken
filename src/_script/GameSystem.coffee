@@ -219,8 +219,6 @@ class GameSystem
         @pressButton 0
       when 90 # Z
         @pressButton 1
-      when 32 # Space
-        alert "Use Z, X and arrow keys\nto control the game"
       else
         console.log "Unassigned keyCode: #{e.keyCode}_"
         do @fullScreen
@@ -263,6 +261,8 @@ class GameSystem
         @depressButton 0
       when 90 # Z
         @depressButton 1
+      when 32 # Space
+        alert "Use Z, X and arrow keys\nto control the game"
       else
         console.log "Unassigned keyCode: #{e.keyCode}-"
 
