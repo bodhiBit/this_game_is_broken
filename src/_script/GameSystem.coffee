@@ -17,6 +17,7 @@ class GameSystem
             oldGame.gameSystem = null
           if @_game?
             @_game.gameSystem = @
+          @g.clearRect 0, 0, @width, @height
         @_game
     TVwidth:
       get: -> @width+2*@_borderWidth
@@ -218,8 +219,11 @@ class GameSystem
         @pressButton 0
       when 90 # Z
         @pressButton 1
+      when 32 # Space
+        alert "Use Z, X and arrow keys\nto control the game"
       else
         console.log "Unassigned keyCode: #{e.keyCode}_"
+        do @fullScreen
   
   _onKeyUp: (e) ->
     switch e.keyCode
@@ -261,8 +265,5 @@ class GameSystem
         @depressButton 1
       else
         console.log "Unassigned keyCode: #{e.keyCode}-"
-        if not @instructed
-          alert "Use Z, X and arrow keys\nto control the game"
-          @instructed = true
 
 module.exports = GameSystem
